@@ -387,6 +387,26 @@ p {
 .filter .item:last-child {
   margin-right: 0px;
 }
-.project-list {
+.project {
   display: flex;
+  flex-wrap: wrap;
+}
+.project .item {
+  width: 360px;
+  height: 420px;
+  border: 1px solid var(--footer-text-color);
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+.project > .item:nth-child(3n) {
+  margin-right: 0px;
+}
+.project .item h2 {
+  margin-bottom: 8px;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+.project .item p {
+  margin-left: 16px;
+  margin-bottom: 32px;
 }
