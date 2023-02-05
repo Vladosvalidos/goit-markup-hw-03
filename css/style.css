@@ -61,6 +61,9 @@ p {
 }
 .main-nav {
   display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24pх;
 }
 
 .address {
@@ -79,6 +82,9 @@ p {
   background-color: var(--active-color);
 }
 /* Header */
+.header {
+  height: 72px;
+}
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -90,6 +96,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .header-logo-web {
   color: var(--header-logo-color);
@@ -295,5 +302,32 @@ p {
   margin-right: 40px;
 }
 .address li:last-child {
+  margin-right: 0px;
+}
+.address {
+  margin-left: auto;
+}
+.advantages {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-advantages .list li {
+  width: 264px;
+  height: 104px;
+}
+.advantages .item {
+  margin-right: 24px;
+}
+.advantages .item:last-child {
+  margin-right: 0px;
+}
+.fuature-list {
+  display: flex;
+}
+.fuature-list .item {
+  margin-right: 24px;
+}
+.fuature-list .item:last-child {
   margin-right: 0px;
 }
