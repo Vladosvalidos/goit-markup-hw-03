@@ -63,7 +63,8 @@ p {
   display: flex;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 24pх;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--footer-text-color);
 }
 
 .address {
@@ -74,6 +75,14 @@ p {
 .hero-btn:focus {
   color: var(--hero-btn-text);
   background-color: var(--active-color);
+}
+.address-mailto:hover,
+.address-mailto:focus {
+  color: var(--active-color);
+}
+.address-tel:hover,
+.address-tel:focus {
+  color: var(--active-color);
 }
 
 .filter-btn:hover,
@@ -142,6 +151,10 @@ p {
 .hero {
   background-color: var(--background-hero-color);
   height: 600px;
+  padding-top: 188px;
+  padding-bottom: 292px;
+  padding-left: 473px;
+  padding-right: 473px;
 }
 .hero-title {
   font-weight: 700;
@@ -150,11 +163,7 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
-  /* margin-left: 317px; */
-  width: 495px;
-  padding-top: 188px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 496px;
 }
 .hero-btn {
   background: var(--filter-btn-color);
