@@ -34,10 +34,13 @@ h6,
 p {
   margin: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   max-width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -169,6 +172,7 @@ p {
   background: var(--filter-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 .hero-btn {
   font-family: inherit;
@@ -204,6 +208,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  margin-bottom: 8px;
 }
 .section-text {
   font-size: 16px;
@@ -220,13 +225,11 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-text-color);
-  margin-top: 120px;
+  margin-bottom: 72px;
 }
 /* Команда */
 .team {
   background-color: var(--footer-logo-color);
-  margin-top: 120px;
-  height: 732px;
 }
 .team-title {
   font-weight: 700;
@@ -239,6 +242,9 @@ p {
 
   color: var(--title-text-color);
   padding-top: 120px;
+  padding-left: 480px;
+  padding-right: 480px;
+  padding-bottom: 72px;
 }
 .team-name {
   font-weight: 500;
@@ -247,6 +253,7 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
@@ -257,7 +264,12 @@ p {
 }
 .footer {
   background-color: var(--background-footer-color);
-  height: 310px;
+}
+.footer .text {
+  padding-left: 156px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 1020px;
 }
 .footer-logo {
   font-family: 'Raleway';
@@ -270,9 +282,6 @@ p {
   text-transform: uppercase;
   color: var(--footer-logo-color);
   text-decoration: none;
-  padding-top: 100px;
-  width: 115px;
-  height: 22px;
 }
 .footer-logo-text {
   font-family: 'Raleway';
@@ -290,10 +299,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
-  width: 264px;
-  height: 72px;
+
   margin-top: 16px;
-  margin-bottom: 100px;
 }
 /* Portfolio */
 .filter-btn {
@@ -340,9 +347,13 @@ p {
 .advantages {
   display: flex;
   flex-direction: row;
-  margin-top: 120px;
 }
-
+.advantages-list {
+  padding-top: 120px;
+  padding-left: 156px;
+  padding-right: 156px;
+  padding-bottom: 120px;
+}
 .section-advantages .list li {
   width: 264px;
   height: 104px;
@@ -355,7 +366,6 @@ p {
 }
 .fuature-list {
   display: flex;
-  margin-top: 72px;
 }
 .fuature-list .item {
   margin-right: 24px;
@@ -365,22 +375,23 @@ p {
 }
 .team-list {
   display: flex;
-  margin-top: 72px;
+  padding-bottom: 120px;
 }
 .team-list .item {
   margin-right: 24px;
-  width: 264px;
-  height: 380px;
   background-color: var(--background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list .item:last-child {
   margin-right: 0px;
 }
 .card-content {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .filter {
   display: flex;
@@ -418,4 +429,9 @@ p {
 .project .item p {
   margin-left: 16px;
   margin-bottom: 32px;
+}
+.fuature {
+  padding-left: 156px;
+  padding-right: 156px;
+  padding-bottom: 120px;
 }
