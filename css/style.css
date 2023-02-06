@@ -93,6 +93,9 @@ img {
 .filter-btn:focus {
   color: #ffffff;
   background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /* Header */
 .header {
@@ -174,6 +177,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  padding-left: 800px;
 }
 .hero-btn {
   font-family: inherit;
@@ -182,13 +186,14 @@ img {
   line-height: 1.5;
   display: flex;
   align-items: center;
+
   letter-spacing: 0.04em;
   color: var(--hero-btn-text);
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 48px;
   padding: 16px 32px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* section1 */
 .visually-hidden {
@@ -302,6 +307,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
+  width: 264px;
 }
 /* Portfolio */
 .filter-btn {
@@ -313,9 +319,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: var(--filter-btn-color);
   cursor: pointer;
@@ -351,8 +355,8 @@ img {
 }
 .advantages-list {
   padding-top: 120px;
-  padding-left: 156px;
-  padding-right: 156px;
+  padding-left: 141px;
+  padding-right: 141px;
   padding-bottom: 120px;
 }
 .section-advantages .list li {
@@ -361,6 +365,7 @@ img {
 }
 .advantages .item {
   margin-right: 24px;
+  width: 264px;
 }
 .advantages .item:last-child {
   margin-right: 0px;
@@ -398,9 +403,9 @@ img {
   display: flex;
 
   flex-wrap: wrap;
-  margin-left: 271px;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  justify-content: center;
+  padding-bottom: 72px;
+  padding-top: 96px;
 }
 .filter .item {
   margin-right: 24px;
@@ -411,28 +416,30 @@ img {
 .project {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 120px;
 }
 .project .item {
   width: 360px;
-  height: 420px;
   border: 1px solid var(--footer-text-color);
   margin-right: 24px;
   margin-bottom: 48px;
+  border: 1px solid var(--footer-text-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .project > .item:nth-child(3n) {
   margin-right: 0px;
 }
-.project .item h2 {
-  margin-bottom: 8px;
-  margin-top: 32px;
-  margin-left: 16px;
-}
-.project .item p {
-  margin-left: 16px;
-  margin-bottom: 32px;
-}
+
 .fuature {
   padding-left: 156px;
   padding-right: 156px;
   padding-bottom: 120px;
+}
+.project .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.project-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
