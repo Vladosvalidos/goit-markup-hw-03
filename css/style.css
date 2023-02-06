@@ -41,6 +41,7 @@ img {
 }
 .container {
   max-width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -282,6 +283,8 @@ img {
   text-transform: uppercase;
   color: var(--footer-logo-color);
   text-decoration: none;
+
+  padding-bottom: 16px;
 }
 .footer-logo-text {
   font-family: 'Raleway';
@@ -299,8 +302,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
-
-  margin-top: 16px;
 }
 /* Portfolio */
 .filter-btn {
