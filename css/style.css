@@ -394,8 +394,7 @@ img {
 
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 72px;
-  padding-top: 96px;
+  margin-bottom: 72px;
 }
 .filter .item {
   margin-right: 24px;
@@ -406,15 +405,11 @@ img {
 .project {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 120px;
 }
 .project .item {
   width: 360px;
-  border: 1px solid var(--footer-text-color);
   margin-right: 24px;
   margin-bottom: 48px;
-  border: 1px solid var(--footer-text-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .project > .item:nth-child(3n) {
   margin-right: 0px;
@@ -430,4 +425,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid var(--footer-text-color);
+}
+.project-list {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
